@@ -6,10 +6,10 @@ const links = [
         name: "Home",
         href: "/home",
     },
-    // {
-    //     name: "Style",
-    //     href: "/style",
-    // },
+     {
+        name: "Profile",
+        href: "/profile",
+    },
     
 ];
 

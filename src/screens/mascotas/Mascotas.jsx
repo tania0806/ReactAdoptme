@@ -78,6 +78,13 @@ const Mascotas = () => {
         </div>
       </div>
     </div>
+    <button
+    className="close-detail"
+    onClick={() => setShowDetail(false)}
+  >
+    <FontAwesomeIcon icon={faTimes} style={{ color: 'red' }} />
+  </button>
+  
   );
 };
 
