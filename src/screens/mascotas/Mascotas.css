@@ -1,0 +1,128 @@
+/* Contenedor principal */
+.mascotas-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: row; /* Hacemos que los elementos estén en fila */
+}
+
+.nav-bar {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-item {
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para la cuadrícula de las mascotas */
+.mascotas-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+  gap: 20px;
+  width: 80%;
+  overflow: hidden;
+}
+
+.mascota-item {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.mascota-item:hover {
+  transform: scale(1.05);
+}
+
+.mascota-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.mascota-info h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Detalles de la mascota seleccionada */
+.mascota-detalle {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mascota-detalle img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mascota-detalle-info {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mascota-detalle-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.mascota-detalle-info p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.adoptar-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.adoptar-btn:hover {
+  background-color: #45a049;
+}
+
+/* Barra de navegación: inicialmente oculta */
+.nav-bar {
+  transform: translateX(300px);
+}
+
+/* Cuando el mouse entra sobre la barra, se muestra */
+.nav-bar:hover {
+  transform: translateX(0);
+}

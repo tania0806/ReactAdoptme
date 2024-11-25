@@ -1,20 +1,17 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './screens/Home';
-import NavBar from './components/NavBar';
+import Home from "./screens/Home"; // Asegúrate de que la ruta sea correcta
+import Mascotas from "./screens/mascotas/Mascotas"
 
-function App() {
+const App = () => {
   return (
-    <div className="">
-
-        <Router>
-          <NavBar/>
-          <Routes>
-            <Route path='/home' element={<Home/>}/>
-            <Route/>
-          </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/mascotas" element={<Mascotas />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
