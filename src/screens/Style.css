@@ -1,0 +1,73 @@
+/* Estilo de la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000; /* Color negro */
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.7); /* Luz blanca */
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
+  }
+  
+  /* Menú desplegable */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 200px;
+    z-index: 10;
+  }
+  
+  .dropdown-menu li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .search-bar button {
+    background: #555;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background: #444;
+  }
+  
