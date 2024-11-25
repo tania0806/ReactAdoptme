@@ -10,7 +10,10 @@ const links = [
         name: "Profile",
         href: "/profile",
     },
-    
+    {
+        name: "Favorito",
+        href: "/favorito",
+    },
 ];
 
 const NavBar = () => {

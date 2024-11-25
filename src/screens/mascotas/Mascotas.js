@@ -118,6 +118,12 @@ const Mascotas = () => {
   const navigateToProfile = () => {
     navigate('/profile');  // Redirige a la ruta '/profile'
   };
+   // Función para navegar al perfil
+   const Favoritos = () => {
+    navigate('/favorito');  // Redirige a la ruta '/profile'
+  };
+
+  
 
   return (
     <div className="mascotas-container">
@@ -133,7 +139,7 @@ const Mascotas = () => {
             <FontAwesomeIcon icon={faUser} />
             {isNavHovered && <span>Ver Perfil</span>}
           </div>
-          <div className="nav-item" onClick={() => navigate('/create-event')}>
+          <div className="nav-item" onClick={Favoritos}>
             <FontAwesomeIcon icon={faPlusCircle} />
             {isNavHovered && <span>Crear Evento</span>}
           </div>
